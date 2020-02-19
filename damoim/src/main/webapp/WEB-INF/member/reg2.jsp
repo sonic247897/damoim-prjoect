@@ -84,15 +84,15 @@
           <br/>
           <br/>
           <form action="/damoim/member/reg3.do" method="post" class="text-left" style="">
-            <div class="form-group"> <label for="form16">아이디</label> <input required="required" type="text" id="id" name="mem_id" class="form-control"  placeholder="4글자 이상">
+            <div class="form-group"> <label for="form16">아이디</label> <input required="required" type="text" id="id" name="mem_id" class="form-control"  placeholder="4글자 이상" minlength="4" maxlength="10">
               <span id="checkVal_id" style="color: red;"></span>
             </div>
-            <div class="form-group"> <label for="form17">닉네임</label> <input required="required" type="text" id="nickname" name="mem_nickname" class="form-control" placeholder="4글자 이상"> </div><span id="checkVal_nick" style="color: red;"></span>
+            <div class="form-group"> <label for="form17">닉네임</label> <input required="required" type="text" id="nickname" name="mem_nickname" class="form-control" placeholder="4글자 이상" minlength="4" maxlength="10"> </div><span id="checkVal_nick" style="color: red;"></span>
             <div class="form-row">
-              <div class="form-group col-md-6"> <label for="form19">비밀번호</label> <input required="required" type="password" id= "pass" name="mem_pass" class="form-control" id="form19" placeholder="••••"> </div>
-              <div class="form-group col-md-6"> <label for="form20">비밀번호 재확인</label> <input required="required" type="password" id="passCheck" class="form-control" placeholder="••••"> </div>
+              <div class="form-group col-md-6"> <label for="form19">비밀번호</label> <input required="required" type="password" id= "pass" name="mem_pass" class="form-control" id="form19" placeholder="••••" minlength="4" maxlength="10"> </div>
+              <div class="form-group col-md-6"> <label for="form20">비밀번호 재확인</label> <input required="required" type="password" id="passCheck" class="form-control" placeholder="••••" minlength="4" maxlength="10"> </div>
             </div><label id= "checkVal_pass" class="text-danger"></label>
-            <div class="form-group"> <label for="form17">이름</label> <input required="required" type="text" name="mem_name" class= "form-control" id="form17" placeholder="2글자 이상"> </div>
+            <div class="form-group"> <label for="form17">이름</label> <input required="required" type="text" name="mem_name" class= "form-control" id="form17" placeholder="2글자 이상" minlength="2" maxlength="10"> </div>
             <div class="form-group"> <label for="form17">생년월일</label> </div>
             <div class="row">
               <div class="col-md-4" style="">
@@ -186,7 +186,7 @@
               </div>
             </div>
             <div class="form-group" style="opacity: 0.5;"> <label for="form18">휴대전화</label> <input required="required" type="text" 
-		name="mem_phone" class="form-control border-dark" id="form18" placeholder="전화번호 입력"> </div>
+		name="mem_phone" class="form-control border-dark" id="form18" placeholder="전화번호 입력" minlength="9" maxlength="15"> </div>
             <div class="form-group">
               <div class="row">
                 <div class="col-md-4"></div>

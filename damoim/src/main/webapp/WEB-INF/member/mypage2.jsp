@@ -1,3 +1,5 @@
+<%@page import="interest.interest_majorVO"%>
+<%@page import="java.util.List"%>
 <%@page import="member.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
@@ -12,7 +14,6 @@
 	type="text/css">
 <link rel="stylesheet"
 	href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
-
 
 </head>
 
@@ -126,8 +127,8 @@
 				</div>
 				<div class="col-md-4"></div>
 			</div>
+			
 			<hr class="w-75" style="border-color: #FF399B;" />
-
 			<div class="row">
 				<div class="col-md-4" align="right">
 					<h4 class="">
@@ -139,6 +140,7 @@
 						class="form-control">
 				</div>
 			</div>
+			
 			<br />
 			<br />
 			<div class="row">
@@ -148,7 +150,7 @@
 							</p>
 				</div>
 				<div class="col-md-11" align="right">
-					<button type="submit" class="btn btn-primary">
+					<button id="next" type="submit" class="btn btn-primary">
 						<b>수정완료</b>
 					</button>
 				</div>
